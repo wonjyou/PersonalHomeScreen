@@ -1,0 +1,115 @@
+#container{
+	width: 100%; 
+	position: relative;
+}
+h4{margin-top:0;}
+
+.panel hr{
+	border:solid #ccc; 
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 1.25em 0 1.1875em;
+	height: 0;
+}
+
+#weather{float:left; width:200px; margin: 10px 0 0 10px; font-weight:normal;}
+.weatherFeed, .weatherTemp, .weatherDesc, .weatherRange, .weatherHumidity, .weatherLink, .weatherItem{
+	font-size:15px; line-height:1.6em; text-align:left;
+}
+.weatherItem{
+	width: 100%;
+}	
+#today{position:relative; float:left; width: 50%; padding:0 10px; height: 110px; line-height:2em; text-align:center; font-size:0.75em; }
+
+.day{
+	color:orangered;
+	font-size: 3em;
+	margin-top:6px;
+	display:inline-block;
+}
+
+#clockContainer{
+	position:relative;
+	float: left;
+	width: 50%;
+}
+
+#ticks, #hourhand,#minutehand{
+	stroke-width: 2px;
+}
+
+#secondhand {
+	stroke-width: 1;
+}	
+
+.hide {display:none;}
+.visuallyhidden{display:none;}
+.reddit {line-height:1em;}
+
+#spinner  {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: solid 3px transparent;
+  border-top-color: #ccc;
+  border-left-color: #ccc;
+  border-radius: 10px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  -moz-animation: pace-spinner 400ms linear infinite;
+  -ms-animation: pace-spinner 400ms linear infinite;
+  -o-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes pace-spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.linkdetails{
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.subrdt {font-size:10px;}
+
+.accordion-toggle {cursor: pointer;}
+.accordion-content {display: none;}
+.accordion-content.default {display: block;}
+  
+@media only screen and (max-width: 641px) {
+  .mobile-hide {
+    display: none;
+	}
+  .mobile-show {
+    display: show;
+  }
+  #weather{
+	margin-top:120px;
+	margin-left:-230px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+	#weather{float:left; width:100%; overflow:hidden;}
+}

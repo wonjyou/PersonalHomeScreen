@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 	<html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Home Screen</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+
+	<div class="row">
+		<div class="large-12">
+				<div class="large-3 columns mobile-hide">
+					<div class="panel4">
+
+					  <div id="clockContainer">
+						<svg id="clock" viewBox="0 0 100 100">
+
+							<circle id="face" cx="50" cy="50" r="45" fill="#fff" stroke="#cccccc" style="stroke-width: 2px;"></circle> <!-- the clock face -->
+
+							<g id="ticks">
+							  <line x1="50" y1="5.000" x2="50.00" y2="10.00" stroke="#cccccc"></line>
+							  <line x1="72.50" y1="11.03" x2="70.00" y2="15.36" stroke="#cccccc"></line>
+							  <line x1="88.97" y1="27.50" x2="84.64" y2="30.00" stroke="#cccccc"></line>
+							  <line x1="95.00" y1="50.00" x2="90.00" y2="50.00" stroke="#cccccc"></line>
+							  <line x1="88.97" y1="72.50" x2="84.64" y2="70.00" stroke="#cccccc"></line>
+							  <line x1="72.50" y1="88.97" x2="70.00" y2="84.64" stroke="#cccccc"></line>
+							  <line x1="50.00" y1="95.00" x2="50.00" y2="90.00" stroke="#cccccc"></line>
+							  <line x1="27.50" y1="88.97" x2="30.00" y2="84.64" stroke="#cccccc"></line>
+							  <line x1="11.03" y1="72.50" x2="15.36" y2="70.00" stroke="#cccccc"></line>
+							  <line x1="5.000" y1="50.00" x2="10.00" y2="50.00" stroke="#cccccc"></line>
+							  <line x1="11.03" y1="27.50" x2="15.36" y2="30.00" stroke="#cccccc"></line>
+							  <line x1="27.50" y1="11.03" x2="30.00" y2="15.36" stroke="#cccccc"></line>
+							</g>
+
+							<g id="hands"> 
+							  <line id="hourhand" x1="50" y1="50" x2="50" y2="24"  stroke="#cccccc" transform="rotate(203,50,50)"></line>
+							  <line id="minutehand" x1="50" y1="50" x2="50" y2="20" stroke="#cccccc" transform="rotate(276,50,50)"></line>
+							  <line id="secondhand" x1="50" y1="50" x2="50" y2="16" stroke="#cccccc" transform="rotate(306,50,50)"></line>
+							</g>
+							<g id="centerDot">
+								<circle cx="50" cy="50" r="3" fill="#cccccc"></circle>
+							</g>
+						</svg>			  
+					  </div>
+					  
+					  <div id="today">
+						<br><a href="http://www.google.com/calendar">calendar</a>
+				      </div>
+
+					  <div id="weather"></div>
+
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div class="panel3">
+						<h4 class="accordion-toggle">News</h4>
+						
+						<div class="accordion-content default">
+							<a href="http://www.nytimes.com/">New York Times</a><br>
+							<a href="http://www.imdb.com">Imdb</a><br>
+							<a href="http://popurls.com/" target="blank">Popurls</a><br>
+							<a href="http://www.thedailybeast.com/">The Daily Beast</a><br>
+							<a href="http://www.wired.com">Wired</a><br>
+							<a href="http://www.latimes.com/">LA Times</a><br>
+							<a href="http://www.washingtonpost.com/">Washington Post</a><br>
+							<a href="http://www.bbc.com/">BBC</a><br>
+						</div>					
+
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div class="panel">
+						<h4 class="accordion-toggle">Favorites</h4>
+						<div class="accordion-content default">
+							<a href="http://www.digg.com/">Digg</a><br>
+							<a href="http://cloud.feedly.com/#latest">Feedly</a><br>						
+							<a href="http://www.npr.org/money">NPR Planet Money</a><br>
+							<a href="http://blog.io9.com/">io9</a><br>		
+							<a href="http://espn.go.com/">ESPN</a><br>						
+							<a href="http://youtube.com">Youtube</a><br>
+							<a href="http://www.fastcodesign.com/">Fast Company</a><br>	
+
+						</div>	
+					</div>
+				</div>
+				<div class="large-3 columns mobile-hide">
+					<div class="panel2">
+						<h4 class="accordion-toggle">Search</h4>
+						<form action="http://www.google.com/search" name=f>
+						<input type=hidden name=hl value=en><INPUT TYPE=hidden name=ie value="ISO-8859-1"><input type="text" maxLength="255" size="20" name="q" value="">
+						<input type=submit value="Google Search" name=btnG>
+						</form>
+						<form action="http://www.wikipedia.org/search-redirect.php" id="searchform">
+						<input type="text" name="search" size="20" />
+
+						<select name="language" class="visuallyhidden">
+						<option value="en" lang="en" xml:lang="en" selected="selected">English</option>
+						</select>
+
+						<input type="submit" name="Wikipedia" value="Wikipedia" />
+
+						<input type="hidden" name="go" value="Go" /> 
+
+						</fieldset>
+						</form>
+
+					</div>
+				</div>
+
+				<div class="large-3 columns">
+					<div class="panel">
+						<h4 class="accordion-toggle">Personal</h4>
+						
+						<div class="accordion-content default">
+							<a href="http://gmail.com/">Gmail</a><br>
+							<a href="http://www.facebook.com">FaceBook</a><br>
+							<a href="http://mail.yahoo.com">Yahoo Mail</a><br>
+							<a href="http://pinterest.com">Pinterest</a><br>
+							<a href="http://www.twitter.com">Twitter</a><br>
+							<a href="http://medium.com">Medium</a><br>
+							<a href="http://plus.google.com">Google Plus</a><br>
+						</div>	
+					</div>
+				</div>
+				<div class="large-3 columns">
+					<div class="panel2">
+						<h4 class="accordion-toggle">Professional</h4>
+						<div class="accordion-content default">
+							<a href="http://www.linkedin.com" target="_blank">LinkedIn</a><br>
+							<a href="http://techcrunch.com/">TechCrunch</a><br>										
+							<a href="http://angel.co">Angel List</a><br>
+							<a href="http://www.businessinsider.com/">Business Insider</a><br>											
+							<a href="https://news.ycombinator.com/">Hacker News</a><br>
+							<a href="http://thestartupfoundry.com/">Startup Foundry</a><br>
+						</div>	
+					</div>
+				</div>
+
+				<div class="large-6 columns">
+					<div class="panel reddit">	
+					<h4 class="accordion-toggle">Reddit News <span id="spinner"></span></h4>
+						<div id="content"></div>
+					</div>
+				</div>
+			<div class="row mobile-hide">
+				<div class="large-6 columns">
+					<div class="panel3">
+						<!-----------     MAP      ------------>
+						<h4>Destination:</h4>
+
+						<form name="form1">
+								<input type="text" SIZE=20 MAXLENGTH=100 name="daddr" id="daddr" value="" />
+								<font FACE="geneva, arial, helvetica" SIZE="-2">Street Address, City and State or Zip Code</font>
+								<INPUT value="Get Directions" TYPE="SUBMIT" onclick="javascript:getDirections();return false;"><br><a href="http://maps.google.com" target="_blank">Google Maps</a><br>
+						</form>						
+					</div>					
+				</div>
+				<div class="large-3 columns">
+					<div class="panel2">
+						<h4 class="accordion-toggle">Movies</h4>
+						<div class="accordion-content default">
+							<a href="http://www.apple.com/trailers/">Quicktime Trailers</a><br>
+							<a href="http://www.rottentomatoes.com">Rotten Tomatoes</a><br>						
+							<a href="http://movies.yahoo.com">Yahoo!Movies</a><br>	
+							<a href="http://www.themoviespoiler.com">Movie Spoilers</a><br>
+							<a href="http://www.boxofficemojo.com">Box Office</a><br>
+							<a href="http://www.metacritic.com">Meta Critic</a><br>
+							<a href="http://www.movie-list.com">Movie List</a><br>
+						</div>	
+					</div>					
+				</div>
+				<div class="large-3 columns mobile-hide">
+					<div class="panel">
+						<h4 class="accordion-toggle">Entertainment</h4>
+						<div class="accordion-content default">
+							<a href="http://www.hulu.com/">Hulu</a><br>
+							<a href="http://spotify.com">Spotify</a><br>
+							<a href="http://songza.com/">Songza</a><br>
+
+						</div>	
+					</div>
+				</div>	
+			</div>
+
+	</div>
+
+</div>
+  <script src="js/vendor/package.min.js"></script>
+
+  <script src="js/redditjson.js"></script>
+  <script src="js/search.js"></script>
+
+</body>
+</html>
