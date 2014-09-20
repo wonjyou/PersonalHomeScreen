@@ -1,7 +1,7 @@
 PersonalHomeScreen
 ==================
 
-A basic home screen you can use for your browser's home page. It's essentially a personal portal page that cleanly displays all of your favorite links all in one place.
+A basic home screen you can use as your browser's home page. It's essentially a personal portal page that cleanly displays all of your favorite links all in one place.
 
 I uploaded this project, because I had many people ask me what I had on my screen over the years. And this basic HTML page was the answer.
 
